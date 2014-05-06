@@ -1,10 +1,15 @@
 package edu.astate.cs;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.widget.TextView;
@@ -12,6 +17,7 @@ import android.widget.TextView;
 public class FreePlay extends Activity {
 	private CountDownTimer fpCountdown;
 	public TextView timerText;
+	private FreePlayOpenHelper fpDB; 
 	private final long startTime = 4 * 1000; 
 	private final long interval = 1 * 1000;
 	private boolean continueMusic = false;
@@ -20,7 +26,7 @@ public class FreePlay extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_free_play);
-//		Log.i("Challenge", "onCreate started"); //Use to show debug info in logcat
+		
 
 		Intent i = getIntent();
 		i.getBooleanExtra("boolean", continueMusic);
@@ -32,7 +38,10 @@ public class FreePlay extends Activity {
 		
 		fpCountdown.start();
 		
+
 		
+		
+
 	}
 	
 	@Override
@@ -95,23 +104,12 @@ public class FreePlay extends Activity {
             super(startTime, interval); //pass to superclasses' constructor
         }
 
-
         @Override
         public void onFinish(){
         	 //Override onFinish() to do nothing
         }
 
-        @Override
-        //used to update timer value
-        public void onTick (long millisUntilFinished)
-        {
-        		timerText.setText("" + millisUntilFinished / 1000);
-            	if ((millisUntilFinished / 1000) == 1)
-            	{
-            		finishIt();
-            	}
-        }
-        // function finishIt() to be able to start new intent earlier
+     // function finishIt() to be able to start new intent earlier
         public void finishIt()
         {
         	// display 1 then wait half a second and start new activity
@@ -139,6 +137,18 @@ public class FreePlay extends Activity {
     	        }, 500); 
         }
         
+
+        @Override
+        //used to update timer value
+        public void onTick (long millisUntilFinished)
+        {
+        		timerText.setText("" + millisUntilFinished / 1000);
+            	if ((millisUntilFinished / 1000) == 1)
+            	{
+            		finishIt();
+            	}
+        }
+
     }
 	
 	@Override
@@ -159,4 +169,5 @@ public class FreePlay extends Activity {
 	    return false;
 	}
 
+	
 }

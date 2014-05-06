@@ -4,9 +4,8 @@
     android:background="@drawable/timebombbgdtwo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.astate.cs.TimeBombStart"
+    tools:context="edu.astate.cs.TimeBomb"
     tools:ignore="MergeRootFrame" >
-
-
+    
 
 </RelativeLayout>

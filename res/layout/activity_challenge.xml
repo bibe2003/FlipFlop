@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/chCountdown"
-         android:layout_width="100dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:gravity="center" 
         android:layout_centerInParent="true"

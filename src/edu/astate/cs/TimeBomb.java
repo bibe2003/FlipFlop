@@ -1,23 +1,16 @@
 package edu.astate.cs;
 
 
-import android.animation.AnimatorInflater;
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
+import java.util.List;
+
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
-import android.view.MotionEvent;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
-import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class TimeBomb extends Activity {
@@ -26,7 +19,7 @@ public class TimeBomb extends Activity {
 	private final long startTime = 4 * 1000; 
 	private final long interval = 1 * 1000;
 	private boolean continueMusic = false;
-	// private boolean flag = true;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +35,9 @@ public class TimeBomb extends Activity {
 		timerText.setText(timerText.getText() + String.valueOf(startTime/1000));
 				
 		timebombCountdown.start();
-	
-		// flag = false;
 		
+
+
 	}
 
 	@Override
@@ -99,8 +92,8 @@ public class TimeBomb extends Activity {
     	}
     	
     }
-	
-   public class MyCountDownTimer extends CountDownTimer //use for actual timer
+    
+	public class MyCountDownTimer extends CountDownTimer //use for actual timer
     {
         public MyCountDownTimer (long startTime, long interval)
         {
@@ -111,20 +104,23 @@ public class TimeBomb extends Activity {
         @Override
         //Alert user to start game upon timer finish
         public void onFinish(){
-           // override onFinish() to do nothing
-        	
-        }
+            // override onFinish() to do nothing
+         	
+         }
+
 
         @Override
         //used to update timer value
         public void onTick (long millisUntilFinished)
         {
         		timerText.setText("" + millisUntilFinished / 1000);
-        		if (millisUntilFinished / 1000 == 1)
-        			finishIt();
+            	if ((millisUntilFinished / 1000) == 1)
+            	{
+            		finishIt();
+            	}
         }
         
-        // function finishIt() to be able to start new intent earlier
+     // function finishIt() to be able to start new intent earlier
         public void finishIt()
         {
         	// display 1 then wait half a second and start new activity
@@ -134,7 +130,7 @@ public class TimeBomb extends Activity {
         	new Handler().postDelayed(new Runnable() {
     	        @Override
     	        public void run() {
-    	            Intent Act2Intent = new Intent(TimeBomb.this, TimeBombStart.class); 
+    	            Intent Act2Intent = new Intent(TimeBomb.this, Start.class); 
     	            
             		if (Home.mIsBound)
      	    			continueMusic = true;
@@ -148,7 +144,7 @@ public class TimeBomb extends Activity {
     	        }, 500); 
         }
 
-    } 
+    }
 	
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event){

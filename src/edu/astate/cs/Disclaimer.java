@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
+import android.content.ServiceConnection;
+import android.os.IBinder;
 
 public class Disclaimer extends Activity {
 	
@@ -70,6 +72,12 @@ public class Disclaimer extends Activity {
     		Home.mServ.resumeMusic();
 		}
     }
+//    @Override
+//    public void onDestroy () //when main is destroyed, kill the music as well
+//    {
+//		Home.class.mServ.stopMusic();
+//        
+//    }
 	
 	public void playOptions(View view) {
 		Intent viewIntent = new Intent(this, PlayOptions.class);

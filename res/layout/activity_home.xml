@@ -37,6 +37,7 @@
         android:layout_above="@+id/imageButton3"
         android:layout_alignParentLeft="true"
         android:background="@drawable/scores"
+        android:onClick="scoresClick"
         android:src="@drawable/scores" />
 
     <ImageButton

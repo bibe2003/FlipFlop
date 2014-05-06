@@ -61,23 +61,32 @@
 
         <activity
             android:name="edu.astate.cs.Challenge"
-            android:label="@string/title_activity_challenge" >
+            android:label="@string/title_activity_challenge"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="edu.astate.cs.TimeBomb"
-            android:label="@string/title_activity_time_bomb" >
+            android:label="@string/title_activity_time_bomb"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="edu.astate.cs.FreePlay"
-            android:label="@string/title_activity_free_play" >
+            android:label="@string/title_activity_free_play"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="edu.astate.cs.TimeBombStart"
-            android:label="@string/title_activity_time_bomb_start" >
+            android:name="edu.astate.cs.ViewScores"
+            android:label="@string/title_activity_view_scores"
+            android:parentActivityName="edu.astate.cs.Home"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.astate.cs.Home" />
         </activity>
         <activity
-            android:name="edu.astate.cs.FreePlayStart"
-            android:label="@string/title_activity_free_play_start" >
+            android:name="edu.astate.cs.Start"
+            android:label="@string/title_activity_start"
+             >
         </activity>
     </application>
 

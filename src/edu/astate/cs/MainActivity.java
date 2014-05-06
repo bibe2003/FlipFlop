@@ -23,6 +23,8 @@ public class MainActivity extends Activity {
 	            startActivity(i);
 	            }
 	        }, 5000);   
+	    
+	    
 	}
 
 	@Override

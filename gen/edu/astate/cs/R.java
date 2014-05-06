@@ -13,6 +13,11 @@ public final class R {
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    
+
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
@@ -25,11 +30,11 @@ public final class R {
         public static final int accept=0x7f020001;
         public static final int b=0x7f020002;
         public static final int backbutton=0x7f020003;
-        public static final int beginin=0x7f020004;
-        public static final int c=0x7f020005;
-        public static final int challenge=0x7f020006;
-        public static final int challengebgd=0x7f020007;
-        public static final int challengebgdtwo=0x7f020008;
+        public static final int c=0x7f020004;
+        public static final int challenge=0x7f020005;
+        public static final int challengebgd=0x7f020006;
+        public static final int challengebgdtwo=0x7f020007;
+        public static final int challengescores=0x7f020008;
         public static final int challengetitle=0x7f020009;
         public static final int d=0x7f02000a;
         public static final int decline=0x7f02000b;
@@ -40,92 +45,103 @@ public final class R {
         public static final int freeplay=0x7f020010;
         public static final int freeplaybgd=0x7f020011;
         public static final int freeplaybgdtwo=0x7f020012;
-        public static final int g=0x7f020013;
-        public static final int gamemodesscreen=0x7f020014;
-        public static final int h=0x7f020015;
-        public static final int help=0x7f020016;
-        public static final int homescreen=0x7f020017;
-        public static final int hourglass=0x7f020018;
-        public static final int i=0x7f020019;
-        public static final int ic_launcher=0x7f02001a;
-        public static final int instructionsfirst=0x7f02001b;
-        public static final int instructionsfourth=0x7f02001c;
-        public static final int instructionslast=0x7f02001d;
-        public static final int instructionssecond=0x7f02001e;
-        public static final int instructionsthird=0x7f02001f;
-        public static final int j=0x7f020020;
-        public static final int k=0x7f020021;
-        public static final int l=0x7f020022;
-        public static final int logo=0x7f020023;
-        public static final int m=0x7f020024;
-        public static final int mainscreen=0x7f020025;
-        public static final int n=0x7f020026;
-        public static final int next=0x7f020027;
-        public static final int o=0x7f020028;
-        public static final int off=0x7f020029;
-        public static final int on=0x7f02002a;
-        public static final int options=0x7f02002b;
-        public static final int optionsbutton=0x7f02002c;
-        public static final int plain=0x7f02002d;
-        public static final int play=0x7f02002e;
-        public static final int scores=0x7f02002f;
-        public static final int timebomb=0x7f020030;
-        public static final int timebombbgd=0x7f020031;
-        public static final int timebombbgdtwo=0x7f020032;
-        public static final int timebombstart=0x7f020033;
-        public static final int toggle=0x7f020034;
+        public static final int freeplayscores=0x7f020013;
+        public static final int g=0x7f020014;
+        public static final int gamemodesscreen=0x7f020015;
+        public static final int h=0x7f020016;
+        public static final int help=0x7f020017;
+        public static final int homescreen=0x7f020018;
+        public static final int hourglass=0x7f020019;
+        public static final int hsbgd=0x7f02001a;
+        public static final int i=0x7f02001b;
+        public static final int ic_launcher=0x7f02001c;
+        public static final int instructionsfirst=0x7f02001d;
+        public static final int instructionsfourth=0x7f02001e;
+        public static final int instructionslast=0x7f02001f;
+        public static final int instructionssecond=0x7f020020;
+        public static final int instructionsthird=0x7f020021;
+        public static final int j=0x7f020022;
+        public static final int k=0x7f020023;
+        public static final int l=0x7f020024;
+        public static final int logo=0x7f020025;
+        public static final int m=0x7f020026;
+        public static final int mainscreen=0x7f020027;
+        public static final int n=0x7f020028;
+        public static final int next=0x7f020029;
+        public static final int o=0x7f02002a;
+        public static final int off=0x7f02002b;
+        public static final int on=0x7f02002c;
+        public static final int options=0x7f02002d;
+        public static final int optionsbutton=0x7f02002e;
+        public static final int plain=0x7f02002f;
+        public static final int play=0x7f020030;
+        public static final int scores=0x7f020031;
+        public static final int timebomb=0x7f020032;
+        public static final int timebombbgd=0x7f020033;
+        public static final int timebombbgdtwo=0x7f020034;
+        public static final int timebombscores=0x7f020035;
+        public static final int toggle=0x7f020036;
     }
     public static final class id {
-        public static final int action_settings=0x7f090010;
-        public static final int animation=0x7f09000e;
+        public static final int action_settings=0x7f090013;
+        public static final int animation=0x7f09000d;
         public static final int backButton01=0x7f090008;
         public static final int backButton02=0x7f090009;
         public static final int backButton03=0x7f09000a;
         public static final int backButton04=0x7f09000b;
         public static final int chCountdown=0x7f090001;
+        public static final int chScoreButton=0x7f090010;
         public static final int container=0x7f090000;
+        public static final int fpScoreButton=0x7f090012;
         public static final int freepCountdown=0x7f090004;
-        public static final int goText=0x7f09000f;
+        public static final int goText=0x7f09000e;
         public static final int imageButton1=0x7f090003;
         public static final int imageButton2=0x7f090007;
         public static final int imageButton3=0x7f090006;
         public static final int imageButton4=0x7f090005;
         public static final int imageView1=0x7f090002;
         public static final int optionsToggle1=0x7f09000c;
-        public static final int tbCountdown=0x7f09000d;
+        public static final int tbCountdown=0x7f09000f;
+        public static final int tbScoreButton=0x7f090011;
     }
     public static final class layout {
         public static final int activity_challenge=0x7f030000;
         public static final int activity_challenge_game=0x7f030001;
-        public static final int activity_disclaimer=0x7f030002;
-        public static final int activity_free_play=0x7f030003;
-        public static final int activity_free_play_game=0x7f030004;
-        public static final int activity_home=0x7f030005;
-        public static final int activity_instructions=0x7f030006;
-        public static final int activity_instructions2=0x7f030007;
-        public static final int activity_instructions3=0x7f030008;
-        public static final int activity_instructions4=0x7f030009;
-        public static final int activity_instructions5=0x7f03000a;
-        public static final int activity_main=0x7f03000b;
-        public static final int activity_options=0x7f03000c;
-        public static final int activity_play_options=0x7f03000d;
-        public static final int activity_time_bomb=0x7f03000e;
-        public static final int activity_time_bomb_game=0x7f03000f;
-        public static final int activity_time_bomb_start=0x7f030010;
+        public static final int activity_challengescores=0x7f030002;
+        public static final int activity_disclaimer=0x7f030003;
+        public static final int activity_free_play=0x7f030004;
+        public static final int activity_free_play_game=0x7f030005;
+        public static final int activity_freeplayscores=0x7f030006;
+        public static final int activity_home=0x7f030007;
+        public static final int activity_instructions=0x7f030008;
+        public static final int activity_instructions2=0x7f030009;
+        public static final int activity_instructions3=0x7f03000a;
+        public static final int activity_instructions4=0x7f03000b;
+        public static final int activity_instructions5=0x7f03000c;
+        public static final int activity_main=0x7f03000d;
+        public static final int activity_options=0x7f03000e;
+        public static final int activity_play_options=0x7f03000f;
+        public static final int activity_start=0x7f030010;
+        public static final int activity_time_bomb=0x7f030011;
+        public static final int activity_time_bomb_game=0x7f030012;
+        public static final int activity_timebombscores=0x7f030013;
+        public static final int activity_view_scores=0x7f030014;
+        public static final int list_item=0x7f030015;
+        public static final int simple_list_item_1=0x7f030016;
     }
     public static final class menu {
         public static final int challenge=0x7f080000;
         public static final int disclaimer=0x7f080001;
         public static final int free_play=0x7f080002;
-        public static final int free_play_start=0x7f080003;
-        public static final int home=0x7f080004;
-        public static final int info=0x7f080005;
-        public static final int instructions=0x7f080006;
-        public static final int main=0x7f080007;
-        public static final int options=0x7f080008;
-        public static final int play_options=0x7f080009;
+        public static final int home=0x7f080003;
+        public static final int info=0x7f080004;
+        public static final int instructions=0x7f080005;
+        public static final int main=0x7f080006;
+        public static final int options=0x7f080007;
+        public static final int play_options=0x7f080008;
+        public static final int start=0x7f080009;
         public static final int time_bomb=0x7f08000a;
-        public static final int time_bomb_start=0x7f08000b;
+        public static final int view_scores=0x7f08000b;
     }
     public static final class raw {
         public static final int mysong=0x7f040000;
@@ -138,14 +154,17 @@ public final class R {
         public static final int title_activity_challenge=0x7f06000a;
         public static final int title_activity_disclaimer=0x7f060008;
         public static final int title_activity_free_play=0x7f06000c;
-        public static final int title_activity_free_play_start=0x7f06000e;
         public static final int title_activity_home=0x7f060003;
         public static final int title_activity_info=0x7f060005;
         public static final int title_activity_instructions=0x7f060006;
         public static final int title_activity_options=0x7f060007;
         public static final int title_activity_play_options=0x7f060004;
+        public static final int title_activity_start=0x7f060011;
         public static final int title_activity_time_bomb=0x7f06000b;
-        public static final int title_activity_time_bomb_start=0x7f06000d;
+        public static final int title_activity_view_scores=0x7f06000d;
+        public static final int title_section1=0x7f06000e;
+        public static final int title_section2=0x7f06000f;
+        public static final int title_section3=0x7f060010;
     }
     public static final class style {
         /** 

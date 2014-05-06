@@ -1,11 +1,14 @@
 package edu.astate.cs;
 
 
+import java.util.List;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.widget.TextView;
@@ -32,7 +35,7 @@ public class Challenge extends Activity {
 		timerText.setText(timerText.getText() + String.valueOf(startTime/1000));
 		
 		clgCountdown.start();
-		
+
 		
 	}
 	
@@ -114,7 +117,8 @@ public class Challenge extends Activity {
             		finishIt();
             	}
         }
-        // function finishIt() to be able to start new intent earlier
+        
+     // function finishIt() to be able to start new intent earlier
         public void finishIt()
         {
         	// display 1 then wait half a second and start new activity
@@ -127,7 +131,7 @@ public class Challenge extends Activity {
     	        	
     	        	setContentView(R.layout.activity_challenge_game);
     	        	
-    	        	/*
+    	        	/* USE THIS FOR START, after we figure out how to implement it
     	            Intent Act2Intent = new Intent(Challenge.this, TimeBombStart.class); 
     	            
             		if (Home.mIsBound)
@@ -142,8 +146,8 @@ public class Challenge extends Activity {
     	        }, 500); 
         }
 
-    } 
-    
+    }
+
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event){
 	    if(keyCode == KeyEvent.KEYCODE_BACK) {

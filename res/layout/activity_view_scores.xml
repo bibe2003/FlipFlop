@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/hsbgd">
+
+    <ImageButton
+        android:id="@+id/chScoreButton"
+        style="@style/AppBaseTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/challenge"
+        android:onClick="challenge"
+        android:src="@drawable/challenge" />
+
+    <ImageButton
+        android:id="@+id/tbScoreButton"
+        style="@style/AppBaseTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chScoreButton"
+        android:layout_alignLeft="@+id/chScoreButton"
+        android:background="@drawable/timebomb"
+        android:onClick="timebomb"
+        android:src="@drawable/timebomb" />
+
+    <ImageButton
+        android:id="@+id/fpScoreButton"
+        style="@style/AppBaseTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tbScoreButton"
+        android:layout_alignLeft="@+id/tbScoreButton"
+        android:background="@drawable/freeplay"
+        android:onClick="freeplay"
+        android:src="@drawable/freeplay" />
+
+</RelativeLayout>
